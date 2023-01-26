@@ -1,0 +1,1 @@
+const containerGroups = document.querySelector('.container-groups')
