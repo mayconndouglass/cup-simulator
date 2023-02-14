@@ -16,15 +16,15 @@ const formatGameData = ({
   const element = document.createElement('div')
   const format = `
   <span>${diaSemana}</span>
-  <span>${data}</span>
+  <span class="game-data">${data}</span>
   <span>${hora}</span>
-  <span>${grupo}</span>
+  <span class="game-grupo">${grupo}</span>
   <div class="confrontation">
     <span class="team team-one">
       <img src="./bandeiras/${mandante}" alt="">
       <input type="number" name="${mandante}" data-group="${grupo}" data-confro="${partida}">
     </span>
-    <span>${partida}</span>
+    <span class="table-match" >${partida}</span>
     <span class="team team-two">
       <input type="number" name="${visitante}" data-group="${grupo}" data-confro="${partida}">
       <img src="./bandeiras/${visitante}" alt="">

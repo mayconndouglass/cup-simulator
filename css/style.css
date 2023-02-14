@@ -4,6 +4,14 @@
   font-family: 'Roboto', sans-serif;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
 .hidden {
   visibility: hidden;
 }
@@ -13,14 +21,14 @@ header {
 }
 
 #title-cup {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 300;
   margin: 30px;
 }
 
 .table-games, .classification {
   width: 90%;
-  margin: 120px auto 40px;
+  margin: -100px auto 40px;
 }
 
 .containerRound {
@@ -115,7 +123,6 @@ input[type=number] {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   justify-items: center;
-  font-size: 16px;
   padding: 60px;
 }
 
@@ -226,7 +233,7 @@ input[type=number] {
 }
 
 .date-qualifiers {
-  font-size: 12px;
+  font-size: 1.2px;
   margin-bottom: 20px;
 }
 
@@ -248,12 +255,12 @@ input[type=number] {
 }
 
 .qualifier-local {
-  font-size: 12px;
+  font-size: 1.2px;
   margin: 5px auto;
 }
 
 .message {
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #9b111e;
 }
 
@@ -348,17 +355,131 @@ input[type=number] {
 }
 
 .menu-simulator ul .menu-text {
-  color: white;
+  color: #ededed;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 1.4rem;
   padding:4px;
 }
 
 .menu-simulator ul .menu-text:hover {
-  color: #555;
+  color: white;
 }
 
 .menu-simulator ul .checked {
   margin-left: 10px;
-  border-bottom: 3px solid white;
+  border-bottom: 2px solid white;
+  color: white;
+}
+
+.table-match {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1210px) {
+  .game {
+    grid-template-columns: repeat(4, 1fr) 3fr 3fr;
+  }
+}
+
+@media (max-width: 968px) {
+  .team-one, .team-two {
+    justify-content: center;
+  }
+
+  html {
+    font-size: 58%;
+  }
+
+  .table-games, .classification {
+    width: 95%;
+  }
+}
+
+@media (max-width: 860px) {
+  .principal-title {
+    margin: 80px auto 0;
+  }
+
+  .principal-title > h1 {
+    font-size: 2.5rem;
+  }
+
+  .principal-title h1::before {
+    top: 30%;
+    width: 1.5rem;
+    left: -2.5rem;
+  }
+
+  html {
+    font-size: 50%;
+  }
+
+  .table-games img {
+    width: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .local {
+    display: none;
+  }
+
+  .title .title-local {
+    display: none;
+  }
+
+  .game {
+    grid-template-columns: repeat(4, 1fr) 3fr;
+  }
+
+  .menu-simulator ul .menu-text {
+    margin-left: 0;
+  }
+
+  .menu-simulator ul {
+    gap: 15px;
+  }
+
+  .round1, .round2, .round3 {
+    padding: 10px;
+  }
+  .menu-simulator, .principal-title {
+    margin: 40px auto 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .table-games, .classification {
+    width: 100%;
+  }
+
+  .game-grupo, .title-group, .game-data, .title-data {
+    display: none;
+  }
+
+  .game {
+    grid-template-columns: repeat(2, 1fr) 3fr;
+  }
+}
+
+@media (max-width: 420px) {
+  .confrontation {
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+}
+
+@media (max-width: 310px) {
+  html {
+    font-size: 45%;
+  }
+
+  .round1, .round2, .round3 {
+    padding: 0px;
+  }
+
+  .game {
+    grid-template-columns: repeat(2, 1fr) 4fr;
+  }
 }

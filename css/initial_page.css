@@ -71,9 +71,8 @@ main {
 }
 
 .principal-title {
-  padding: 0 4rem;
-  margin-top: 120px;
-
+  width: 90%;
+  margin: 120px auto 0;
 }
 
 .principal-title > h1 {
@@ -343,8 +342,6 @@ nav.active .hamburguer::after {
   transform: rotate(-135deg);
   top: -7px;
 }
-
-
 
 /* SÓ POR ENQUANTO */
 nav {
